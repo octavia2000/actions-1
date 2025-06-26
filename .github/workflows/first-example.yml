@@ -1,0 +1,16 @@
+name: my firts workflow 
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-lasest 
+        steps:
+            - name: welcome message
+              run: echo "my first github actions job"
+
+            - name: List files
+              run: ls
+
+            - name: Read file
+              run: cat README.md 
